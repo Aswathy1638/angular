@@ -105,6 +105,13 @@
         <button ngbDropdownItem (click)="editBook(row.id)">
           {{ '::Edit' | abpLocalization }}
         </button>
+        <div ngbDropdownMenu>
+            <!-- add the Delete button -->
+              <button ngbDropdownItem (click)="delete(row.id)">
+                  {{ '::Delete' | abpLocalization }}
+              </button>
+          </div>
+          
       </div>
     </div>
   </ng-template>
